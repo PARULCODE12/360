@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">360°</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-main">
+        <h1 class="m-3 display-1">Hey Folks!!</h1>
+        <h3 class="m-3 display-6">Let's Have A Virtual Tour Of KIET!!</h3>
+        <a href="#explore"><button type="button" class="btn btn-light w-25 align-self-center m-3">Getting
+                Started</button></a>
+    </div>
+    <div id="about">
+        <h1 class="display-2"> About us</h1>
+        <div class="d-md-flex flex-md-row justify-content-evenly about-txt">
+            <div class="about-txt-1 m-1">
+                <h1 class="fs-1 h1">This is my Forst Heading </h1>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi libero laudantium
+                    quisquam nam
+                    architecto ratione corporis. Laboriosam quo earum, error, minus voluptatibus cum dolorem dolor
+                    exercitationem necessitatibus optio ducimus.</p>
+                <a href="#explore"><button type="button" class="btn btn-dark w-25 align-self-center">Getting
+                        Started</button></a>
+
+            </div>
+            <img src="images/metaverse1.jpeg" alt="image" class="about-img">
+        </div>
+    </div>
+    <hr>
+    <div id="explore">
+        <h1 class="display-1">Expolre</h1>
+        <div class="d-md-flex flex-md-row justify-content-evenly about-txt">
+            <img src="images/image.jpg" alt="image" class="explore-img">
+            <div class="explore-txt-1 m-1 d-flex flex-column justify-content-around">
+                <h1 class="fs-1  h1">Let's Have A Quick Tour Of Our Campus</h1>
+                <!-- <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi libero laudantium
+                    quisquam nam
+                    architecto ratione corporis. Laboriosam quo earum, error, minus voluptatibus cum dolorem dolor
+                    exercitationem necessitatibus optio ducimus.</p> -->
+                <a href="https://orbix360.com/t/OFYPMIMh76hoqUEmXUrBTiHfPrw1/6462557812424704"><button type="button"
+                        class="btn btn-dark w-50 align-self-center">Explore</button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr>
+
+    <div id="team">
+        <div class="container">
+            <div>
+                <img src="images/parul.jpg" alt="team" class="team-img">
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/parul-verma-a86427243">linkdin</a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/elsa.2908/?igshid=OTk0YzhjMDVlZA%3D%3D">Instagram</a>
+            </div>
+        </div>
+    </div> -->
+
+    <hr>
+
+    <div id="contact" class="d-flex justify-content-around">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.873742274346!2d77.49449147402335!3d28.753186378594073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf574d18f2b6f%3A0x4a65c0bc0122eb2f!2sKIET%20Group%20of%20Institutions!5e0!3m2!1sen!2sin!4v1684262983225!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <h1 class="display-2">Contact us !!</h1>
+            <form action="mailto:prabhatsahrawat010203@gmail.com" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Name</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <input type="text " class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center mt-3">Made with ❤️ by Parul </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
